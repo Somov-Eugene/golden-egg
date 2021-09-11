@@ -1,0 +1,18 @@
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: wrap;
+}
+
+@mixin line() {
+  content: "";
+  display: block;
+  margin: $mc;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  width: 60px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: $yellow;
+}
