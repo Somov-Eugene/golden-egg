@@ -16,3 +16,11 @@
   border-radius: 50px;
   background-color: $yellow;
 }
+
+@mixin img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 50px $black-opacity);
+}
