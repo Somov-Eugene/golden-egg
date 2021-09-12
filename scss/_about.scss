@@ -1,0 +1,29 @@
+.about {
+  margin-top: 95px;
+  margin-bottom: 105px;
+
+  &__container {
+    @include flex(space-between, center);
+  }
+
+  &__text {
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  &__img {
+    position: relative;
+    width: 50%;
+    max-width: 475px;
+
+    img {
+      @include img;
+    }
+
+    .circle {
+      right: 0;
+      transform: translate(40%, -50%);
+    }
+  }
+}
