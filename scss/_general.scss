@@ -1,8 +1,8 @@
 $kurale: "Kurale", serif;
 $os: "Open Sans", sans-serif;
 
-$wrap: 1470px;
-$container: 1200px;
+$wrap: 1440px;
+$container: 1230px;
 $mc: 0 auto;
 $text: 18px;
 
@@ -44,12 +44,12 @@ svg {
 .wrapper {
   max-width: $wrap;
   margin: $mc;
-  padding: 0 15px;
 }
 
 .container {
   max-width: $container;
   margin: $mc;
+  padding: 0 15px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
