@@ -1,21 +1,11 @@
-$kurale: "Kurale", serif;
-$os: "Open Sans", sans-serif;
-
-$wrap: 1440px;
-$container: 1230px;
-$mc: 0 auto;
-$text: 18px;
-
-$black: #000000;
-$white: #ffffff;
-$yellow:#e8c300;
-$black-opacity: rgba(0, 0, 0, 0.5);
-$white-opacity: rgba(255, 255, 255, 0.5);
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,6 +29,34 @@ a {
 svg {
   width: 100%;
   height: 100%;
+}
+
+section h2 {
+  margin: 0;
+  font-family: $kurale;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 114%;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    @include line;
+  }
+}
+
+section p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 175%;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+.intro {
+  font-weight: 700;
 }
 
 .wrapper {
@@ -66,4 +84,14 @@ svg {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  border: 20px solid $yellow;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 100px $black-opacity);
 }
