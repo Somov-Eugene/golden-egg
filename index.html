@@ -42,7 +42,6 @@
               <li class="top-menu__item">
                 <a href="#contacts">Контакты</a>
               </li>
-
             </ul>
           </nav>
         </div>
@@ -121,6 +120,49 @@
     </section>
     <!-- /.team -->
 
+    <section class="order" id="order">
+      <div class="container order__container">
+        <div class="order__text">
+          <h2>Заказать столик</h2>
+          <form class="order__form" method="post" action="#">
+            <input type="text" name="client-name" placeholder="Имя" required>
+            <input type="email" name="client-email" placeholder="Email" required>
+            <input type="text" name="client-phone" placeholder="Телефон" required>
+            <div class="order__select">
+              <select name="quantity-clients" required>
+                <option value="">Кол-во людей</option>
+                <option value="1">1</option>
+                <option value="2-5">2-5</option>
+                <option value="6-10">6-10</option>
+                <option value="11-40">11-40</option>
+                <option value="41-100">41-100</option>
+              </select>
+            </div>
+            <input type="text" name="visit-date" placeholder="Дата (день/месяц)" required>
+            <div class="order__select">
+              <select name="visit-time" required>
+                <option value="">Время</option>
+                <option value="10:00 - 14:00">10:00 - 14:00</option>
+                <option value="14:00 - 18:00">14:00 - 18:00</option>
+                <option value="18:00 - 23:00">18:00 - 23:00</option>
+              </select>
+            </div>
+            <button type="submit">Оформить заказ</button>
+          </form>
+        </div>
+        <div class="order__img">
+          <img src="img/order-img.jpg" alt="Заказать столик">
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="order__contacts">
+          Пн&nbsp;&ndash;&nbsp;Пт: <strong>8&nbsp;&ndash;&nbsp;22</strong>, Сб&nbsp;&ndash;&nbsp;Вс: <strong>9&nbsp;&ndash;&nbsp;23</strong>,
+          Телефон: <a href="tel:+380987291367">+38098&nbsp;729&nbsp;13&nbsp;67</a> / <a href="tel:+380974587879">+38097&nbsp;458&nbsp;78&nbsp;79</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.order -->
 
   </div>
   <!-- /.wrapper -->
