@@ -1,0 +1,73 @@
+.spec {
+  background-color: $black;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/bg-spec.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+
+    h3 {
+      margin: 0;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 117%;
+      text-align: center;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+
+  &__slide-container {
+    @include flex(space-between, center);
+  }
+
+  &__text {
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__img {
+    position: relative;
+    width: 50%;
+    max-width: 445px;
+    text-align: right;
+
+    img {
+      @include img;
+    }
+
+    .circle {
+      left: 0;
+      transform: translate(-40%, -50%);
+    }
+  }
+
+  &__pagination {
+    padding-top: 35px;
+    padding-bottom: 50px;
+    @include flex(center, center);
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $white-opacity;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &-active {
+      background-color: $white;
+    }
+  }
+}
