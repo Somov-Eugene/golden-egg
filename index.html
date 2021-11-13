@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/swiper.min.js" defer></script>
+  <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -47,39 +49,39 @@
         <div class="container home__container-center">
           <p class="time-work">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</p>
           <div class="home__text">
-						<p>Ресторан</p>
-						<h1>Golden Egg</h1>
-						<div class="home__btns">
-							<a class="btn-order" href="#order">Заказать столик</a>
-							<a href="#about">О ресторане</a>
-						</div>
-						<a class="arrow__about" href="#about">
+            <p>Ресторан</p>
+            <h1>Golden Egg</h1>
+            <div class="home__btns">
+              <a class="btn-order" href="#order">Заказать столик</a>
+              <a href="#about">О ресторане</a>
+            </div>
+            <a class="arrow__about" href="#about">
               <span class="visually-hidden">Следующий экран</span>
-							<svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на следующий экран">
-								<use xlink:href="img/sprite-icons.svg#arrow"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="socials">
-						<a target="_blank" href="https://www.facebook.com/">
+              <svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на следующий экран">
+                <use xlink:href="img/sprite-icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="socials">
+            <a target="_blank" href="https://www.facebook.com/">
               <span class="visually-hidden">Facebook</span>
-							<svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на Facebook">
-								<use xlink:href="img/sprite-icons.svg#facebook"></use>
-							</svg>
-						</a>
-						<a target="_blank" href="https://twitter.com/">
+              <svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на Facebook">
+                <use xlink:href="img/sprite-icons.svg#facebook"></use>
+              </svg>
+            </a>
+            <a target="_blank" href="https://twitter.com/">
               <span class="visually-hidden">Twitter</span>
-							<svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на Twitter">
-								<use xlink:href="img/sprite-icons.svg#twitter"></use>
-							</svg>
-						</a>
-						<a target="_blank" href="https://www.instagram.com/">
+              <svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на Twitter">
+                <use xlink:href="img/sprite-icons.svg#twitter"></use>
+              </svg>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
               <span class="visually-hidden">Instagram</span>
-							<svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на Instagram">
-								<use xlink:href="img/sprite-icons.svg#instagram"></use>
-							</svg>
-						</a>
-					</div>
+              <svg width="62" height="62" viewBox="0 0 62 62" role="img" aria-label="Перейти на Instagram">
+                <use xlink:href="img/sprite-icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -89,9 +91,13 @@
       <div class="container about__container">
         <div class="about__text">
           <h2>О ресторане</h2>
-          <p class="intro">Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер&nbsp;и, самое главное, богатейший выбор вкуснейших блюд отменного качества&nbsp;&mdash; именно эти характеристики привлекают гостей в&nbsp;наш ресторан.</p>
-          <p>Официанты этого заведения знают все тонкости приготовления блюд, они подскажут гостям наиболее подходящие для них яства. Тут хорошо знают постоянных клиентов, умело угождая их&nbsp;вкусам.</p>
-          <p>Идеально дополняет ресторан уютная кофейня, находящаяся на&nbsp;первом этаже. Чашечка изумительного кофе и&nbsp;сладости от&nbsp;местного кондитера зарядят вас бодростью и&nbsp;позитивной энергией.</p>
+          <p class="intro">Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер&nbsp;и, самое главное,
+            богатейший выбор вкуснейших блюд отменного качества&nbsp;&mdash; именно эти характеристики привлекают гостей
+            в&nbsp;наш ресторан.</p>
+          <p>Официанты этого заведения знают все тонкости приготовления блюд, они подскажут гостям наиболее подходящие
+            для них яства. Тут хорошо знают постоянных клиентов, умело угождая их&nbsp;вкусам.</p>
+          <p>Идеально дополняет ресторан уютная кофейня, находящаяся на&nbsp;первом этаже. Чашечка изумительного кофе
+            и&nbsp;сладости от&nbsp;местного кондитера зарядят вас бодростью и&nbsp;позитивной энергией.</p>
         </div>
         <div class="about__img">
           <img src="img/about-img.jpg" alt="Интерьер ресторана">
@@ -112,8 +118,11 @@
         </div>
         <div class="team__text">
           <h2>Шеф-повар</h2>
-          <p class="intro">За&nbsp;подбор продуктов и&nbsp;приготовление вкусных блюд отвечает наш высококвалифицированный шеф-повар. Блюда в&nbsp;его исполнении превращаются в&nbsp;настоящие шедевры. Никто не&nbsp;останется равнодушным к&nbsp;такому непревзойденному сочетанию.</p>
-          <p>Своей работой мы&nbsp;хотим радовать каждого нашего посетителя. Мы&nbsp;гарантируем всем клиентам, что время, проведенное в&nbsp;нашем заведении, будет отличаться особым теплом и&nbsp;изысканным вкусом.</p>
+          <p class="intro">За&nbsp;подбор продуктов и&nbsp;приготовление вкусных блюд отвечает наш
+            высококвалифицированный шеф-повар. Блюда в&nbsp;его исполнении превращаются в&nbsp;настоящие шедевры. Никто
+            не&nbsp;останется равнодушным к&nbsp;такому непревзойденному сочетанию.</p>
+          <p>Своей работой мы&nbsp;хотим радовать каждого нашего посетителя. Мы&nbsp;гарантируем всем клиентам, что
+            время, проведенное в&nbsp;нашем заведении, будет отличаться особым теплом и&nbsp;изысканным вкусом.</p>
         </div>
       </div>
     </section>
@@ -156,8 +165,10 @@
       </div>
       <div class="container">
         <div class="order__contacts">
-          Пн&nbsp;&ndash;&nbsp;Пт: <strong>8&nbsp;&ndash;&nbsp;22</strong>, Сб&nbsp;&ndash;&nbsp;Вс: <strong>9&nbsp;&ndash;&nbsp;23</strong>,
-          Телефон: <a href="tel:+380987291367">+38098&nbsp;729&nbsp;13&nbsp;67</a> / <a href="tel:+380974587879">+38097&nbsp;458&nbsp;78&nbsp;79</a>
+          Пн&nbsp;&ndash;&nbsp;Пт: <strong>8&nbsp;&ndash;&nbsp;22</strong>, Сб&nbsp;&ndash;&nbsp;Вс:
+          <strong>9&nbsp;&ndash;&nbsp;23</strong>,
+          Телефон: <a href="tel:+380987291367">+38098&nbsp;729&nbsp;13&nbsp;67</a> / <a
+            href="tel:+380974587879">+38097&nbsp;458&nbsp;78&nbsp;79</a>
         </div>
       </div>
     </section>
@@ -178,8 +189,10 @@
               </div>
               <div class="spec__text">
                 <h2>Golden Egg</h2>
-                <p class="intro">Невероятно красивый десерт Пирожное &laquo;Golden Egg&raquo;. 3D&nbsp;пирожное в&nbsp;форме яйца в&nbsp;гнёздышке.</p>
-                <p>Узнать, каково золото на&nbsp;вкус, приглашаем в&nbsp;наш ресторан. Темный бельгийский шоколад, Амаретто, мусс мята-лемонграсс, центр морковь-маракуйя&nbsp;&mdash; удержаться почти невозможно.</p>
+                <p class="intro">Невероятно красивый десерт Пирожное &laquo;Golden Egg&raquo;. 3D&nbsp;пирожное
+                  в&nbsp;форме яйца в&nbsp;гнёздышке.</p>
+                <p>Узнать, каково золото на&nbsp;вкус, приглашаем в&nbsp;наш ресторан. Темный бельгийский шоколад,
+                  Амаретто, мусс мята-лемонграсс, центр морковь-маракуйя&nbsp;&mdash; удержаться почти невозможно.</p>
               </div>
             </div>
           </div>
@@ -192,9 +205,12 @@
               </div>
               <div class="spec__text">
                 <h2>Утиные истории</h2>
-                <p class="intro">Утиные ножки здесь маринуют с&nbsp;травами, запекают, а&nbsp;потом тушат, пока мясо не&nbsp;приобретет нежную текстуру.</p>
-                <p>К&nbsp;утке подают красную капусту, томлёную в&nbsp;красном вине, а&nbsp;также толчёный картофель со&nbsp;шкварками.
-                  Фермерскую утиную грудку обжаривают и&nbsp;подают с&nbsp;соусом демиглас и&nbsp;вишнёвым кули, а&nbsp;также с&nbsp;нежным
+                <p class="intro">Утиные ножки здесь маринуют с&nbsp;травами, запекают, а&nbsp;потом тушат, пока мясо
+                  не&nbsp;приобретет нежную текстуру.</p>
+                <p>К&nbsp;утке подают красную капусту, томлёную в&nbsp;красном вине, а&nbsp;также толчёный картофель
+                  со&nbsp;шкварками.
+                  Фермерскую утиную грудку обжаривают и&nbsp;подают с&nbsp;соусом демиглас и&nbsp;вишнёвым кули,
+                  а&nbsp;также с&nbsp;нежным
                   картофельным гратеном, запечённым со&nbsp;сливками, тимьяном и&nbsp;сыром пармезан.</p>
               </div>
             </div>
@@ -208,11 +224,557 @@
     </section>
     <!-- /.spec -->
 
+    <section class="menu" id="menu">
+      <h2>Наше меню</h2>
+      <p class="intro menu__intro">Предлагаем насладиться кухней от профессиональных поваров ресторана GOLDEN EGG!</p>
+
+      <div class="tabs__container">
+        <ul class="tabs">
+          <li class="tabs__item active" data-tab="#snacks" tabindex="0">Закуски</li>
+          <li class="tabs__item" data-tab="#meats" tabindex="0">Мясные блюда</li>
+          <li class="tabs__item" data-tab="#salads" tabindex="0">Салаты</li>
+          <li class="tabs__item" data-tab="#deserts" tabindex="0">Десерты</li>
+          <li class="tabs__item" data-tab="#wines" tabindex="0">Вина</li>
+          <li class="tabs__item" data-tab="#drinks" tabindex="0">Напитки</li>
+        </ul>
+      </div>
+
+      <div class="menu__sliders">
+
+        <!-- slider1 -->
+        <div class="menu__slider-block show" id="snacks">
+          <div class="swiper-container menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination menu__pagination"></div>
+          </div>
+        </div>
+        <!-- /slider1 -->
+
+        <!-- slider2 -->
+        <div class="menu__slider-block" id="meats">
+          <div class="swiper-container menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination menu__pagination"></div>
+          </div>
+        </div>
+        <!-- /slider2 -->
+
+        <!-- slider3 -->
+        <div class="menu__slider-block" id="salads">
+          <div class="swiper-container menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination menu__pagination"></div>
+          </div>
+        </div>
+        <!-- /slider3 -->
+
+        <!-- slider4 -->
+        <div class="menu__slider-block show" id="deserts">
+          <div class="swiper-container menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide1.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination menu__pagination"></div>
+          </div>
+        </div>
+        <!-- /slider4 -->
+
+        <!-- slider5 -->
+        <div class="menu__slider-block" id="wines">
+          <div class="swiper-container menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide2.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination menu__pagination"></div>
+          </div>
+        </div>
+        <!-- /slider5 -->
+
+        <!-- slider6 -->
+        <div class="menu__slider-block" id="drinks">
+          <div class="swiper-container menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="menu__item">
+                  <img class="menu__item-img" src="img/menu-slide3.jpg" alt="">
+                  <div class="menu__item-text">
+                    <h3 class="menu__title">Фирменный цезарь</h3>
+                    <small class="menu__price">175.00 грн</small>
+                    <p class="menu__desc">
+                      с&nbsp;тигровыми креветками, копченой куриной грудкой, курицей-гриль, салатом Айсберг,
+                      перепелиными яйцами, томатами Черри и&nbsp;c&nbsp;соусом Дор-Блю
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination menu__pagination"></div>
+          </div>
+        </div>
+        <!-- /slider6 -->
+
+      </div>
+    </section>
+    <!-- /.menu -->
 
   </div>
   <!-- /.wrapper -->
 
-  <script src="js/swiper.min.js"></script>
-  <script src="js/scripts.js"></script>
 </body>
 </html>
