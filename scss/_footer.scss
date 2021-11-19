@@ -1,0 +1,18 @@
+.footer {
+  padding: 14px 10px;
+  background-color: rgba($black, 0.9);
+
+  .copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: $white-opacity;
+
+    a {
+      font-weight: 700;
+      color: inherit;
+    }
+  }
+}
