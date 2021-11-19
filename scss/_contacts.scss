@@ -1,0 +1,115 @@
+.contacts {
+  padding: 50px 0 90px;
+
+  h2 {
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__intro {
+    margin: $mc;
+    text-align: center;
+    max-width: 520px;
+  }
+
+  &__form {
+    @include flex(center, center);
+
+    input,
+    textarea {
+      margin: 0 8px 16px;
+      padding: 0 20px;
+      width: calc(33.33% - 16px);
+      height: 60px;
+      font-size: 14px;
+      line-height: 136%;
+      color: $black;
+      background-color: $light-gray;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+
+      &::placeholder {
+        color: $gray-opacity;
+      }
+
+      &:focus {
+        outline: 2px solid $yellow;
+      }
+    }
+
+    textarea {
+      padding: 20px;
+      width: 100%;
+      height: 120px;
+      resize: none;
+    }
+  }
+
+  .contacts__data-submit {
+    @include flex(space-between, center);
+    flex-wrap: nowrap;
+    padding: 0 8px;
+    width: 100%;
+
+    .contacts__data {
+      width: 50%;
+      max-width: 580px;
+    }
+
+    button[type=submit] {
+      width: 50%;
+      max-width: 580px;
+
+      height: 60px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 167%;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $yellow;
+      outline: none;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease 0s;
+
+      &:hover,
+      &:focus {
+        border: 2px solid $yellow;
+        background-color: darken($yellow, 15%);
+      }
+    }
+  }
+
+  .contacts__data {
+    @include flex(flex-start, center);
+
+    &-item {
+      @include flex(flex-start, center);
+      margin-right: 20px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 100%;
+      color: $gray-opacity;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.map {
+  width: 100%;
+  height: 475px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

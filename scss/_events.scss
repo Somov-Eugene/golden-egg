@@ -1,0 +1,96 @@
+.events {
+  padding: 45px 0;
+  background-image: url("/img/bg-events.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h3{
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__container {
+    margin: 45px auto;
+    @include flex(center, center);
+  }
+
+  &__left {
+    position: relative;
+    margin-right: 40px;
+
+    img {
+      @include img;
+    }
+
+    .circle {
+      left: 0;
+      transform: translate(-50%, -40%);
+    }
+
+    .event__title {
+      right: 0;
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+
+  &__right {
+    position: relative;
+    margin-left: 40px;
+
+    img {
+      @include img;
+    }
+
+    .circle {
+      right: 0;
+      transform: translate(50%, -40%);
+    }
+
+    .event__title {
+      left: 0;
+      transform: scale(-1);
+      border-radius: 5px 0px 0px 5px;
+    }
+  }
+
+  .event__title {
+    position: absolute;
+    padding: 20px 30px;
+    top: 0;
+    height: 100%;
+    font-family: $kurale;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 50%;
+    align-items: center;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $black;
+    writing-mode: vertical-rl;
+    z-index: 1;
+  }
+
+  &__contacts {
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: $white-opacity;
+
+    a {
+      font-weight: 700;
+      color: inherit;
+    }
+  }
+
+
+
+}
